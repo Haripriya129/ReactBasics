@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Product from './Component/Product';
+import Book from './Component/Book';
+import QrCodeGenerator from './Component/QrCodeGenerator';
+import TokenId from './Component/TokenId';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Product/>
+     <Book/>
+     <h1>QR Code Generator</h1>
+      <QrCodeGenerator />
+      <TokenId/>
+
     </div>
   );
 }
